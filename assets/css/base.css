@@ -1,0 +1,41 @@
+* {
+    /* margin: 0; */
+    box-sizing: inherit;    /* inherit from html tag */
+}
+
+
+
+html {
+    font-size: 62.5%;   /* 1rem = 10px */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.grid {
+    width: 1200px;
+    max-width: 100%;    /* width < 1200px */
+    margin: 0 auto;     /* central align */
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
