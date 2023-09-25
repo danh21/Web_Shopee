@@ -1,5 +1,5 @@
 :root {
-    --primary_color: 255, 62, 45;
+    --primary_color: 247,68,46;
     --separate_color: 255, 255, 255, 0.3;
     --greyish_color: 206, 203, 203;
     --text_color: rgb(110, 102, 102);
@@ -23,7 +23,7 @@ html {
 
 
 .grid {
-    width: 1200px;
+    width: 120rem;
     max-width: 100%;    /* width < 1200px */
     margin: 0 auto;     /* central align */
 }
@@ -48,7 +48,7 @@ html {
     }
 }
 
-@keyframes noti_appear {
+@keyframes popup_appear {
     from {
         transform: scale(0);
         opacity: 0;
