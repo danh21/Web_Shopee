@@ -2,7 +2,8 @@
     --primary_color: 247,68,46;
     --separate_color: 255, 255, 255, 0.3;
     --greyish_color: 206, 203, 203;
-    --text_color: rgb(110, 102, 102);
+    --gray_color: rgb(110, 102, 102);
+    --margin-header_item: 8px;
 }
 
 
