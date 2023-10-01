@@ -3,6 +3,8 @@
     --separate_color: 255, 255, 255, 0.3;
     --greyish_color: 206, 203, 203;
     --gray_color: rgb(110, 102, 102);
+
+    --height-header: 12rem;
     --margin-header_item: 8px;
 }
 
@@ -29,14 +31,14 @@ html {
     margin: 0 auto;     /* central align */
 }
 
-.grid__full-width {
+/* .grid__full-width {
     width: 100%;
-}
+} */
 
-.grid__row {
+/* .grid__row {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 
 

@@ -9,14 +9,47 @@
     <!--Reset CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     
+    <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+
+    <!-- Icon -->
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
 
     <!-- Select font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <!--LINK: https://github.com/evondev/youtube/blob/master/slick-slider/index.html?fbclid=IwAR1ztfHMYBjUfrJHy2alSkqULWJ2YSzhMnhNiGF-SYfagY6Xn-7sV67Y0VA -->
+    <!-- line 13 -> 20 --> 
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Css of slick -->
+    <!-- line 22 -> 26 -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./app.js"></script>
 </head>
 <body>
     <header id="header">
@@ -240,6 +273,158 @@
             </div>
         </div>
     </header>
+
+
+
+    <div id="content">
+        <div class="grid">
+            <div class="content__container">
+                <!-- Banner -->
+                <div class="advertisement-banner">
+                    <!-- slider -->
+                    <div class="image-slider">
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement1.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement2.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement3.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement4.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement5.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement6.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement7.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement8.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement9.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement10.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement11.jfif" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement12.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./assets/img/slide_advertisement13.jfif" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sub banner -->
+                    <div class="advertisement-banner__sub">
+                        <img src="/assets/img/advertisement1.jfif" alt="">
+                        <img src="./assets/img/advertisement2.png" alt="">
+                    </div>
+                </div>              
+            </div>
+
+            <div class="content__container">
+                <div class="advertisement-nav">
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/e4a404283b3824c211c1549aedd28d5f_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Khung Giờ Săn Sale</p>
+                        </a>
+                    </div>  
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/a8d76bca057ba0b117dcf8e1ef068d16_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Miễn Phí Ship - Có Shopee</p>
+                        </a>
+                    </div>
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/vn-50009109-11d9732a464d895d3699ca40431d0bfd_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Voucher Giảm Đến 500.000Đ</p>
+                        </a>
+                    </div>  
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/vn-50009109-852300c407c5e79bf5dc1854aa0cfeef_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Hàng Hiệu Outlet Giảm 50%</p>
+                        </a>
+                    </div>  
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/vn-50009109-8a387d78a7ad954ec489d3ef9abd60b4_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Mã Giảm Giá</p>
+                        </a>
+                    </div>  
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Gì Cũng Rẻ - Deal Sốc 9.000Đ</p>
+                        </a>
+                    </div>
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Nạp Thẻ, Dịch Vụ & Data</p>
+                        </a>
+                    </div>  
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/vn-50009109-b497d642290be58c36b3ab0ba7ca7629_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Nhận Ngay 10.000 Xu</p>
+                        </a>
+                    </div> 
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/vn-50009109-29961f92098bc9153b88332110a91c87_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Quốc Tế - Deal Siêu Rẻ</p>
+                        </a>
+                    </div>  
+                    <div class="advertisement-nav__item">
+                        <a href="" class="advertisement-nav__link">
+                            <div class="advertisement-nav__img" style="background-image: url(https://cf.shopee.vn/file/vn-50009109-1975fb1af4ae3c22878d04f6f440b6f9_xhdpi);"></div>
+                            <p class="advertisement-nav__text">Bắt Trend - Giá Sốc</p>
+                        </a>
+                    </div> 
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
 
 
 </body>
