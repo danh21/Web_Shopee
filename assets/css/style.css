@@ -420,13 +420,52 @@
 
 
 .content__container {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.content__list {
+    display: flex;
+    background-color: white;
+}
+
+
+
+.content__link {
+    text-decoration: none;
+}
+
+
+
+.content__item {
+    width: 10%;
+    text-align: center;
+}
+
+.content__item__img {
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content__item__text {
+    margin: 7px 1rem;
+    font-weight: 300;
+    color: black;
+
+    /* overflow text */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
 }
 
 
 
 .advertisement-banner {
     height: 24rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -449,16 +488,11 @@
 
 
 .advertisement-nav {
-    display: flex;
     padding-top: 2rem;
-    background-color: white;
+    border-radius: 2px;
 }
 
 .advertisement-nav__item {
-    width: 10%;
-    margin: 0 1rem;
-    text-align: center;
-    box-sizing: border-box;
     /* transition */
     position: relative;
     transition: top linear .1s;
@@ -469,22 +503,62 @@
     top: -2px;  /* transition */
 }
 
-.advertisement-nav__link {
-    text-decoration: none;
-}
-
 .advertisement-nav__img {
     height: 4.5rem;
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .advertisement-nav__text {
-    margin: 7px 0;
     font-size: 1.4rem;
-    color: black;
 }
 
+
+
+.category {
+    border-radius: 2px;
+    background-color: white;
+}
+
+.category__heading {
+    height: 6rem;
+    border-bottom: 1px solid rgba(var(--greyish_color), .3);
+}
+
+.category__heading span {
+    margin-left: 2rem;
+    line-height: 6rem;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: grey;
+}
+
+.category__list {
+    border-bottom: 1px solid rgba(var(--greyish_color), .3);
+}
+
+.category__item {
+    border-right: 1px solid rgba(var(--greyish_color), .3);
+}
+
+.category__item:hover {
+    box-shadow: 5px 5px 25px 15px rgba(var(--greyish_color), .05);
+}
+
+.category__list:last-child, 
+.category__item:last-child {
+    border: none;
+}
+
+.category__img {
+    height: 8rem;
+}
+
+.category__img-big {
+    height: 7rem; 
+    margin-top: 10px;
+}
+
+.category__text {
+    font-size: 1.5rem;
+}
 
 /* ---------------------------- BODY ---------------------------- */
