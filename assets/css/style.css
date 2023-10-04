@@ -463,6 +463,25 @@
 
 
 
+.content__category:hover .content__btn {
+    cursor: pointer;
+    transform: scale(2, 2);
+} 
+
+.content__btn {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    top: 55%;
+    right: -1%;
+    border: 1px white solid;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(var(--greyish_color), .3);
+    background-color: white;
+}
+
+
+
 .advertisement-banner {
     height: 24rem;
     margin-bottom: 2rem;
@@ -514,6 +533,7 @@
 
 
 .category {
+    position: relative; /* for handling button */
     border-radius: 2px;
     background-color: white;
 }
@@ -560,5 +580,9 @@
 .category__text {
     font-size: 1.5rem;
 }
+
+
+
+
 
 /* ---------------------------- BODY ---------------------------- */
