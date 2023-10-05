@@ -421,13 +421,13 @@
 
 .content__container {
     margin-bottom: 2rem;
+    background-color: white;
 }
 
 
 
 .content__list {
     display: flex;
-    background-color: white;
 }
 
 
@@ -438,6 +438,7 @@
 
 
 
+/* using bg-img */
 .content__item {
     width: 10%;
     text-align: center;
@@ -463,16 +464,20 @@
 
 
 
-.content__category:hover .content__btn {
+.content__category {
+    position: relative; /* for handling button */
+}
+
+.content__category:hover .content__btn-next {
     cursor: pointer;
     transform: scale(2, 2);
 } 
 
-.content__btn {
+.content__btn-next {
     height: 2.5rem;
     width: 2.5rem;
     position: absolute;
-    top: 55%;
+    top: 50%;
     right: -1%;
     border: 1px white solid;
     border-radius: 50%;
@@ -533,9 +538,7 @@
 
 
 .category {
-    position: relative; /* for handling button */
     border-radius: 2px;
-    background-color: white;
 }
 
 .category__heading {
@@ -583,6 +586,83 @@
 
 
 
+.sale__heading {
+    height: 6rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale__title {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.sale__title h1 {
+    font-size: 2.2rem;
+    color: rgb(var(--primary_color));
+}
+
+.sale__title-bold {
+    font-weight: 900;
+}
+
+.sale__title-bold i {
+    font-size: 2rem;
+}
+
+.sale__title-light {
+    font-weight: 400;
+}
+
+.sale__time {
+    padding: 0 2px;
+    border-radius: 2px;
+    background-color: black;
+}
+
+.sale__time span {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.sale__btn-view {
+    font-size: 1.4rem;
+    color: rgb(var(--primary_color));
+    text-decoration: none;
+}
+
+.sale__item {
+    width: 16%;
+    margin: 0rem 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sale__img {
+    width: 100%;
+}
+
+.sale__price {
+    font-size: 1.8rem;
+    color: rgb(var(--primary_color));
+}
+
+.sale__price span {
+    vertical-align: super;  
+    font-size: 1.2rem;
+}
+
+.sale__process {
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(255,189,166);
+    border-radius: 1rem;
+}
 
 
 /* ---------------------------- BODY ---------------------------- */
