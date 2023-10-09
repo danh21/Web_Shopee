@@ -3,9 +3,14 @@
     --separate_color: 255, 255, 255, 0.3;
     --greyish_color: 206, 203, 203;
     --gray_color: rgb(110, 102, 102);
+    --mall_color: rgb(208, 1, 27);
+    --sale_color: rgba(255,212,36,.9);
 
     --height-header: 12rem;
     --margin-header_item: 8px;
+    --width-content_sale: 3.6rem;
+    --height-content_header: 6rem;
+    --size-content_heading: 1.7rem;
 }
 
 

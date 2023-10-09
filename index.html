@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo-shopee.png">
 
     <!--Reset CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
@@ -156,6 +157,8 @@
                                 <span>Xem tất cả</span>
                             </a>
                         </div>
+                        <!-- number of noties -->
+                        <div class="header__numOfNoti">1</div>
                     </li>
                     
                     <!-- Support -->
@@ -276,7 +279,7 @@
 
 
 
-    <div id="content">
+    <div id="content" style="background-image: url(./assets/img/bg-advertisement.png);">
         <div class="grid">
             <!-- Advertisement -->
             <div class="content__container">
@@ -352,12 +355,20 @@
                     </div>
                     <!-- Sub banner -->
                     <div class="advertisement-banner__sub">
-                        <img src="./assets/img/advertisement1.jfif" alt="">
-                        <img src="./assets/img/advertisement2.png" alt="">
+                        <a href="">
+                            <img src="./assets/img/advertisement1.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/advertisement2.png" alt="">
+                        </a>
                     </div>
                 </div>  
-                
-                <!-- Ad items -->
+            </div>
+
+
+
+            <!-- Ad items -->
+            <div class="content__container">
                 <div class="content__list advertisement-nav">
                     <div class="content__item advertisement-nav__item">
                         <a href="" class="content__link">
@@ -428,12 +439,12 @@
             <div class="content__container">
                 <div class="category content__category">
                     <!-- heading -->
-                    <div class="category__heading">
+                    <div class="content__heading category__heading">
                         <span>DANH MỤC</span>
                     </div>
 
-                    <!-- list 1 -->
-                    <div class="content__list category__list">
+                    <!-- list items -->
+                    <div class="content__list">
                         <div class="content__item category__item">
                             <a href="" class="content__link">
                                 <div class="content__item__img category__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b_tn&quot;);"></div>
@@ -494,10 +505,6 @@
                                 <p class="content__item__text category__text">Ô Tô & Xe Máy & Xe Đạp</p>
                             </a>
                         </div>
-                    </div>
-
-                    <!-- list 2 -->
-                    <div class="content__list category__list">
                         <div class="content__item category__item">
                             <a href="" class="content__link">
                                 <div class="content__item__img category__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d_tn&quot;);"></div>
@@ -572,10 +579,11 @@
             <!-- flash sale -->
             <div class="content__container">
                 <!-- heading -->
-                <div class="sale__heading">
+                <div class="content__heading sale__heading">
                     <div class="sale__title">
-                        <h1 class="sale__title-bold">F<i class="fa-solid fa-bolt-lightning"></i>ASH</h1>
-                        <h1 class="sale__title-light">SALE</h1>
+                        <!-- <h1 class="sale__title-bold">F<i class="fa-solid fa-bolt-lightning"></i>ASH</h1>
+                        <h1 class="sale__title-light">SALE</h1> -->
+                        <img src="./assets/img/flash-sale.png" alt="">
                         <h1 class="sale__time"><span>00</span></h1>
                         <h1 class="sale__time"><span>40</span></h1>
                         <h1 class="sale__time"><span>21</span></h1>
@@ -593,12 +601,22 @@
                         <div class="sale__process">
                             <span>ĐANG BÁN CHẠY</span>
                         </div>
+                        <div class="content__pin">Mall</div>
+                        <div class="content__sale">
+                            <div class="content__sale__percent">27%</div>
+                            <div class="content__sale__text">GIẢM</div>
+                        </div>
                     </a>
                     <a href="" class="sale__item">
                         <img src="./assets/img/sale2.jfif" alt="" class="sale__img">
                         <p class="sale__price"> <span>đ</span> 355.000</p>
                         <div class="sale__process">
                             <span>ĐANG BÁN CHẠY</span>
+                        </div>
+                        <div class="content__pin">Mall</div>
+                        <div class="content__sale">
+                            <div class="content__sale__percent">35%</div>
+                            <div class="content__sale__text">GIẢM</div>
                         </div>
                     </a>
                     <a href="" class="sale__item">
@@ -607,12 +625,22 @@
                         <div class="sale__process">
                             <span>ĐANG BÁN CHẠY</span>
                         </div>
+                        <div class="content__pin">Mall</div>
+                        <div class="content__sale">
+                            <div class="content__sale__percent">36%</div>
+                            <div class="content__sale__text">GIẢM</div>
+                        </div>
                     </a>
                     <a href="" class="sale__item">
                         <img src="./assets/img/sale4.jfif" alt="" class="sale__img">
                         <p class="sale__price"> <span>đ</span> 1.150.000</p>
                         <div class="sale__process">
                             <span>ĐANG BÁN CHẠY</span>
+                        </div>
+                        <div class="content__pin">Mall</div>
+                        <div class="content__sale">
+                            <div class="content__sale__percent">32%</div>
+                            <div class="content__sale__text">GIẢM</div>
                         </div>
                     </a>
                     <a href="" class="sale__item">
@@ -621,6 +649,11 @@
                         <div class="sale__process">
                             <span>ĐANG BÁN CHẠY</span>
                         </div>
+                        <div class="content__pin">Mall</div>
+                        <div class="content__sale">
+                            <div class="content__sale__percent">50%</div>
+                            <div class="content__sale__text">GIẢM</div>
+                        </div>
                     </a>
                     <a href="" class="sale__item">
                         <img src="./assets/img/sale6.png" alt="" class="sale__img">
@@ -628,12 +661,117 @@
                         <div class="sale__process">
                             <span>ĐANG BÁN CHẠY</span>
                         </div>
+                        <div class="content__pin content__pin--favorite">Yêu thích</div>
+                        <div class="content__sale">
+                            <div class="content__sale__percent">80%</div>
+                            <div class="content__sale__text">GIẢM</div>
+                        </div>
                     </a>
 
                     <!-- next button -->
                     <button class="content__btn-next">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
+                </div>
+            </div>
+
+
+
+            <!-- 3 advertisement banners -->
+            <div class="content__container">
+                <a href="" class="advertisement--consecutive">
+                    <img src="./assets/img/3-ad_banners.jfif" alt="">
+                </a>
+            </div>
+
+
+
+            <!-- shopee mall -->
+            <div class="content__container">
+                <!-- heading -->
+                <div class="content__heading">
+                    <div class="mall__services">
+                        <a href="" class="mall__title ">SHOPEE MALL</a>
+                        <div class="mall__service">
+                            <img src="./assets/img/icon_return.png" alt="">
+                            <p>7 Ngày Miễn Phí Trả Hàng</p>
+                        </div>
+                        <div class="mall__service">
+                            <img src="./assets/img/icon_real.png" alt="">
+                            <p>Hàng Chính Hãng 100%</p>
+                        </div>
+                        <div class="mall__service">
+                            <img src="./assets/img/icon_transport.png" alt="">
+                            <p>Miễn Phí Vận Chuyển</p>
+                        </div>
+                    </div>
+                    <a href="" class="mall__btn-view">                
+                        <span>Xem tất cả</span>
+                        <div class="mall__icon">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- body -->
+                <div class="mall__body">
+                    <!-- banner -->
+                    <img src="./assets/img/mall_ad.jfif" alt="">
+                    <!-- list items -->
+                    <div class="content__list content__category">
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-50009109-cebfae17cd5979d823fb74ac79a922fa_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Mua là có quà</p>
+                            </a>
+                        </div>
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/be40023a9d9cff397a470460bc7a924d_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Deli siêu sale</p>
+                            </a>
+                        </div>
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-50009109-7e80ab64bdc989f5c0862ed828f343a2_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Ưu đãi đến 50%</p>
+                            </a>
+                        </div>
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-50009109-06fb832ef52b45481158c26831cc459b_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Thời trang -50%</p>
+                            </a>
+                        </div>
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-50009109-e8e0b80b57828bee61eb7e31c3d83765_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Giảm đến 50%</p>
+                            </a>
+                        </div>
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-50009109-079ef6ec5c89b6a436c4455226841cd6_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Mua là có quà</p>
+                            </a>
+                        </div>
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-50009109-08a87dd1e828b4bef31dafa67d5300ec_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Quà mọi đơn</p>
+                            </a>
+                        </div>
+                        <div class="content__item mall__item">
+                            <a href="" class="content__link">
+                                <div class="content__item__img mall__img" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-50009109-0be3ac214d6174200ed4f3096a0faa9a_xhdpi&quot;);"></div>
+                                <p class="content__item__text mall__text">Voucher 100k</p>
+                            </a>
+                        </div>
+                        <!-- next button -->
+                        <button class="content__btn-next">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
