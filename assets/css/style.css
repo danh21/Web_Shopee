@@ -430,6 +430,11 @@
     border-bottom: 1px solid rgba(var(--greyish_color), .3);
 }
 
+.content__heading span {
+    font-size: var(--size-content_heading);
+    font-weight: 400;
+}
+
 
 
 .content__list {
@@ -613,9 +618,6 @@
 }
 
 .category__heading span {
-    line-height: 6rem;
-    font-size: var(--size-content_heading);
-    font-weight: 200;
     color: grey;
 }
 
@@ -811,5 +813,59 @@
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--mall_color);
+}
+
+
+
+#top_search .content__heading span {
+    color: rgb(var(--primary_color));
+}
+
+.top_search__img {
+    position: relative;
+}
+
+.top_search__info {
+    position: absolute;
+    bottom: 0;
+    height: 2.2rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgb(var(--greyish_color));
+}
+
+.top_search__info span {
+    line-height: 2rem;
+}
+
+#top_search p {
+    font-size: 1.8rem;
+    color: var(--gray_color);
+}
+
+.top_search__pin {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: -2px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(var(--primary_color));
+}
+
+.top_search__pin span {
+    line-height: 4rem;
+}
+
+.top_search__pin::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    border-width: 1rem 1.5rem;
+    border-style: solid;
+    border-color: rgb(var(--primary_color)) transparent transparent;
 }
 /* ---------------------------- BODY ---------------------------- */
