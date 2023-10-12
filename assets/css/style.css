@@ -532,9 +532,11 @@
 
 .content__sale {
     width: var(--width-content_sale);
+    padding-top: 5px;
     position: absolute;
     top: 0;
     right: 0;
+    text-align: center;
     font-size: 1.2rem;
     background-color: var(--sale_color);
 }
@@ -550,6 +552,7 @@
 .content__sale::after {
     content: "";
     position: absolute;
+    top: 101%;
     right: 0;
     border-width: 0px calc(var(--width-content_sale) / 2) 4px;
     border-style: solid;
@@ -867,5 +870,115 @@
     border-width: 1rem 1.5rem;
     border-style: solid;
     border-color: rgb(var(--primary_color)) transparent transparent;
+}
+
+
+
+#recommend.content__container {
+    background-color: transparent;
+}
+
+#recommend .content__heading {
+    justify-content: center;
+    background-color: white;
+    border-bottom: 5px solid rgb(var(--primary_color));
+    cursor: pointer;
+}
+
+#recommend .content__heading span {
+    color: rgb(var(--primary_color));
+}
+
+#recommend .content__list {
+    margin-top: 1rem;
+}
+
+.recommend__item {
+    width: 15%;
+    position: relative;
+    margin: 0rem 1rem 2rem;
+    text-decoration: none;
+    background-color: white;
+}
+.recommend__item:hover {
+    border: 1px solid rgb(var(--primary_color));
+}
+.recommend__item:hover .recommend__search {
+    display: block;
+}
+
+.recommend__info {
+    margin: 0 1rem;
+}
+
+#recommend .content__item__text {
+    margin: 7px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.recommend__sale {
+    display: inline-block;
+    padding: 0 5px;
+    color: white;
+    background-color: orange;
+}
+
+.recommend__flashsale {
+    display: inline-block;
+    padding: 0 5px;
+    color: rgb(var(--primary_color));
+    border: 1px solid rgb(var(--primary_color));
+}
+
+.recommend__foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#recommend .sale__price {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+#recommend .sale__price span {
+    margin-top: 5px;
+}
+
+.recommend__sold {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: var(--gray_color);
+}
+
+.recommend__search {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgb(var(--primary_color));
+}
+
+.recommend__btn {
+    height: 4rem;
+    width: 32%;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 2px;
+}
+.recommend__btn:hover {
+    background-color: rgba(var(--greyish_color), 0.3);
+}
+.recommend__btn span {
+    margin: auto;
+    font-size: 1.5rem;
+    color: var(--gray_color);
 }
 /* ---------------------------- BODY ---------------------------- */
